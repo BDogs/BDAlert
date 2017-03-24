@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>README copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>README.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>F92986651E7F6FBD00A89733</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9E928FA1E83CB78009F3D97</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9E928FE1E83CBF5009F3D97</key>
 		<dict>
 			<key>primary</key>
 			<true/>

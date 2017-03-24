@@ -6,6 +6,19 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		F9E928FA1E83CB78009F3D97 /* README */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F9E928FB1E83CB78009F3D97 /* Build configuration list for PBXAggregateTarget "README" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = README;
+			productName = README;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		F929864B1E7F6FBD00A89733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929864A1E7F6FBD00A89733 /* AppDelegate.swift */; };
 		F929864D1E7F6FBD00A89733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929864C1E7F6FBD00A89733 /* ViewController.swift */; };
@@ -14,6 +27,9 @@
 		F92986551E7F6FBD00A89733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92986531E7F6FBD00A89733 /* LaunchScreen.storyboard */; };
 		F92986601E7F6FBD00A89733 /* BDAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929865F1E7F6FBD00A89733 /* BDAlertTests.swift */; };
 		F929866B1E7F6FBD00A89733 /* BDAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929866A1E7F6FBD00A89733 /* BDAlertUITests.swift */; };
+		F929867B1E7F798C00A89733 /* BDAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929867A1E7F798C00A89733 /* BDAlertController.swift */; };
+		F9E928F71E8370C5009F3D97 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E928F61E8370C5009F3D97 /* TransitionAnimator.swift */; };
+		F9E928F91E837BCB009F3D97 /* TransitionAnimatorMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E928F81E837BCB009F3D97 /* TransitionAnimatorMaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +63,9 @@
 		F92986661E7F6FBD00A89733 /* BDAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BDAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F929866A1E7F6FBD00A89733 /* BDAlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDAlertUITests.swift; sourceTree = "<group>"; };
 		F929866C1E7F6FBD00A89733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F929867A1E7F798C00A89733 /* BDAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BDAlertController.swift; sourceTree = "<group>"; };
+		F9E928F61E8370C5009F3D97 /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
+		F9E928F81E837BCB009F3D97 /* TransitionAnimatorMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimatorMaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +116,7 @@
 		F92986491E7F6FBD00A89733 /* BDAlert */ = {
 			isa = PBXGroup;
 			children = (
+				F92986781E7F6FD000A89733 /* BDAlert */,
 				F929864A1E7F6FBD00A89733 /* AppDelegate.swift */,
 				F929864C1E7F6FBD00A89733 /* ViewController.swift */,
 				F929864E1E7F6FBD00A89733 /* Main.storyboard */,
@@ -123,6 +143,32 @@
 				F929866C1E7F6FBD00A89733 /* Info.plist */,
 			);
 			path = BDAlertUITests;
+			sourceTree = "<group>";
+		};
+		F92986781E7F6FD000A89733 /* BDAlert */ = {
+			isa = PBXGroup;
+			children = (
+				F98B8D7D1E835BD9008D52A7 /* TransitionAnimator */,
+				F92986791E7F700300A89733 /* BDAlertController */,
+			);
+			path = BDAlert;
+			sourceTree = "<group>";
+		};
+		F92986791E7F700300A89733 /* BDAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				F929867A1E7F798C00A89733 /* BDAlertController.swift */,
+			);
+			path = BDAlertController;
+			sourceTree = "<group>";
+		};
+		F98B8D7D1E835BD9008D52A7 /* TransitionAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				F9E928F61E8370C5009F3D97 /* TransitionAnimator.swift */,
+				F9E928F81E837BCB009F3D97 /* TransitionAnimatorMaker.swift */,
+			);
+			path = TransitionAnimator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,13 +233,16 @@
 		F929863F1E7F6FBC00A89733 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "诸葛游";
 				TargetAttributes = {
 					F92986461E7F6FBD00A89733 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					F929865A1E7F6FBD00A89733 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -204,6 +253,10 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F92986461E7F6FBD00A89733;
+					};
+					F9E928FA1E83CB78009F3D97 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -223,6 +276,7 @@
 				F92986461E7F6FBD00A89733 /* BDAlert */,
 				F929865A1E7F6FBD00A89733 /* BDAlertTests */,
 				F92986651E7F6FBD00A89733 /* BDAlertUITests */,
+				F9E928FA1E83CB78009F3D97 /* README */,
 			);
 		};
 /* End PBXProject section */
@@ -260,7 +314,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F929864D1E7F6FBD00A89733 /* ViewController.swift in Sources */,
+				F9E928F91E837BCB009F3D97 /* TransitionAnimatorMaker.swift in Sources */,
+				F9E928F71E8370C5009F3D97 /* TransitionAnimator.swift in Sources */,
 				F929864B1E7F6FBD00A89733 /* AppDelegate.swift in Sources */,
+				F929867B1E7F798C00A89733 /* BDAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BDAlert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengYeHen.BDAlert;
@@ -424,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BDAlert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengYeHen.BDAlert;
@@ -486,6 +545,20 @@
 			};
 			name = Release;
 		};
+		F9E928FC1E83CB78009F3D97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F9E928FD1E83CB78009F3D97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -505,6 +578,7 @@
 				F92986711E7F6FBD00A89733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F92986721E7F6FBD00A89733 /* Build configuration list for PBXNativeTarget "BDAlertTests" */ = {
 			isa = XCConfigurationList;
@@ -513,12 +587,22 @@
 				F92986741E7F6FBD00A89733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F92986751E7F6FBD00A89733 /* Build configuration list for PBXNativeTarget "BDAlertUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F92986761E7F6FBD00A89733 /* Debug */,
 				F92986771E7F6FBD00A89733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9E928FB1E83CB78009F3D97 /* Build configuration list for PBXAggregateTarget "README" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9E928FC1E83CB78009F3D97 /* Debug */,
+				F9E928FD1E83CB78009F3D97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

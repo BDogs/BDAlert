@@ -20,6 +20,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func clickedToPresent(_ sender: Any) {
+
+        let content = UIView()
+        content.backgroundColor = UIColor.red
+        let edgeInset = UIEdgeInsets(top: 200, left: 100, bottom: 100, right: 100)
+        
+//        let alert = BDAlertController(withSystemModalTransitionType: .coverVertical, contentView: content, contentEdgeInset: edgeInset)
+        let alert = BDAlertController(withCustomModalTransitionType: .crossDissolve_custom, contentView: content, contentEdgeInset: edgeInset, durarion: 0.25)
+        
+//        alert.couldTouchDissmiss = false
+        present(alert, animated: true, completion: nil)
+    }
 
 }
 
